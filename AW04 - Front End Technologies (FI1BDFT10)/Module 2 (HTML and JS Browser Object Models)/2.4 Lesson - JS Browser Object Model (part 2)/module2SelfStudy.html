@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Module 2 Self Study
+        </title>
+        <style>
+            table, td{
+                border: 1px solid;
+            }
+            td{
+                padding: 3px;
+            }
+            table{
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body onload="printSize()" onresize="printSize()">
+        <script src ="module2SelfStudy.js"></script>
+
+        <p id="text">Text to be changed</p>
+        <button onclick="changeStyle()">Style</button><br><br>
+
+        <p>First paragraph</p>
+        <p>Second paragraph</p>
+        <button onclick="changeColor()">Change color</button><br><br>
+
+        <p><a id="link1" type="text/html" target="_blank" href="https://google.com">Click me!</a></p>
+        <button onclick="getAttributes()">Show attributes value</button><br><br><br>
+
+        <table id="myTable">
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+            </tr>
+            <tr>
+                <td>Barbara</td>
+                <td>Turner</td>
+            </tr>
+        </table>
+        <button onclick="insertRow()">Insert row</button><br><br>
+
+        <table id="myTable2"></table>
+        <button id="createMyTable2Button" onclick="createTable()">Create the table</button><br><br><br>
+
+        <select id="fruitsSelect">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Orange</option>
+            <option>Pineapple</option>
+        </select>
+        <button id="removeOptionButton" onclick="removeSelected()">Remove selected option</button><br><br><br>
+
+        <div>
+            <button onclick="displayBulbasaur()">Bulbasaur</button>
+            <button onclick="displayPikachu()">Pikachu</button>
+        </div><br><br><br>
+
+        <p>Move mouse to Pikachu to see what happens!</p>
+        <img onmouseover="highlight()" onmouseout="turnOffHighlight()"
+        src="https://cdn.pixabay.com/photo/2016/09/09/11/59/pokemon-1656997_960_720.png" width="240" height="200">
+        <p>Nå skal jeg ut på eventyr<br>
+            for jeg har fått et kall<br>
+            <i>Å fange noen rare dyr<br>
+            som bor inni en ball</i><br><br>
+            
+            Reiser over land og strand<br>
+            ut på evig jakt<br>
+            <i>Ja, Pokemon, se det går an<br>
+            å bruke deres makt</i><br><br>
+            
+            Pokemon, fanger alle nå<br>
+            for deg og meg<br>
+            for det er jo det jeg må!<br><br>
+            
+            <i>Pokemon!<br>
+            Du, min beste venn<br>
+            på vår jord vi elsker dem</i><br><br>
+            
+            Pokemon, fanger alle<br>
+            jeg blir så lei<br>
+            for styrke vil vise vei<br><br>
+            
+            <i>Du gir meg og jeg gir deg<br>
+            Pokemon!<br>
+            Fanger alle nå, fanger alle nå!<br>
+            <b>Pokemon!</b></i></p>
+    </body>
+</html>

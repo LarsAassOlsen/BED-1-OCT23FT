@@ -1,0 +1,19 @@
+#para1 {
+    border: 3px solid green;
+    border-radius: 10px;
+}
+
+#para2 {
+    border-style: dashed solid;
+    border-width: 3px 7px;
+    border-color: brown blue;
+}
+
+#para3 {
+    border: 1cm double yellow;
+}
+
+#para4 {
+    border-style: double dashed;
+    border-width: thick;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>The Window History Object</h1>
+        <button onclick="goBack(2)">Go 2 pages back</button>
+        <button onclick="goBack(5)">Go 5 pages back</button>
+        <button onclick="history.back()">Go back</button>
+        <button onclick="history.forward()">Go next</button>
+        <script>
+            function goBack(stepsToGoBack){
+                if(history.length > stepsToGoBack){
+                    history.go(-stepsToGoBack);
+                }
+                else{
+                    history.go(-(history.length - 1));
+                }
+            }
+        </script>
+    </body>
+</html>

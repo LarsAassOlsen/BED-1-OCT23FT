@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Task HTML DOM (part 1)</title>
+    </head>
+    <body>
+        <p id="para1">Bigger or smaller?</p>
+        <p id="para2"></p>
+        <p id="para3">Background color?</p>
+    </body>
+    <script>
+        function getRandomColor(){
+            var random = Math.random();
+
+            if(random < 1/3){
+                return "yellow";
+            }
+            else if(random < 2/3){
+                return "magenta";
+            }
+            return "cyan";
+        }
+        setInterval(() => {
+            currentFont = window.getComputedStyle(document.getElementById("para1"), null).getPropertyValue('font-size');
+            parsedFont = parseFloat(currentFont.slice(0, -2));
+            document.getElementById("para1").style.fontSize = (Math.random() > 0.5 ? parsedFont * 2 : parsedFont / 2).toString() + "px";
+        }, 5000)
+        setInterval(() => document.getElementById("para2").innerHTML = "Current date : " + Date(), 10000)
+        setInterval(() => document.getElementById("para3").style.backgroundColor = getRandomColor(), 3000)
+    </script>
+</html>

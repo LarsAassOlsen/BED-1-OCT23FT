@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p><button onclick="openWin()">Start</button></p>
+    </body>
+    <script>
+        let myWindow;
+        function openWin(){
+            myWindow = window.open("","","width=200, height=100");
+            setTimeout(() => {
+                resizeWin()
+            }, (1000));
+        }
+        function resizeWin(){
+            myWindow.resizeTo(300,300);
+            setTimeout(() => {
+                moveWinTo()
+            }, 1000);
+        }
+        function moveWinTo(){
+            myWindow.moveTo(1,999);
+            setTimeout(() => {
+                myWindow.close();
+        }, 1000);
+        }
+    </script>
+</html>

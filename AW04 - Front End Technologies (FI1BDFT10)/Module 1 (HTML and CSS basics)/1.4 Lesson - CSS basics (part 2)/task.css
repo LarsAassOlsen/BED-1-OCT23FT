@@ -1,0 +1,25 @@
+p {
+    width: 90%;
+    float: left;
+}
+
+button {
+    width: 33%;
+    height: 50px;
+    background-color: aquamarine;
+    border-style: 5px solid;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    float:inherit;
+
+    transition-property: height, transform;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: ease;
+    margin: 4px 2px;
+}
+
+button:hover {
+    height: 100px;
+    background-color: red;
+}

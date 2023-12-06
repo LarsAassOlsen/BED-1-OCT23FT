@@ -1,0 +1,20 @@
+#para1 {
+    border-bottom: 10px solid green;
+    margin: 0 0 50px 0;
+}
+
+#para2 {
+    border-style: dashed solid;
+    border-width: 3px 7px;
+    border-color: brown blue;
+    margin: 20px 0 0 0;
+}
+
+#para3 {
+    border: 1cm double yellow;
+}
+
+#para4 {
+    border-style: double dashed;
+    border-width: thick;
+}

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h1 id="myHeader">Click on this text!</h1>
+    <script>
+        function changeText() {
+            document.getElementById("myHeader").innerHTML = "Ooops!";
+        }
+        document.getElementById("myHeader").onclick = changeText;
+    </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM task</title>
+    </head>
+    <body>
+        <button onclick="buttonClick()" id="myButton"><b>Click me!</b></button>
+    </body>
+    <script>
+        function buttonClick(){
+            alert("Hello world!")
+        }
+        function changeButtonText(){
+            this.innerText = "Clicked!";
+        }
+        document.getElementById("myButton").addEventListener("click", changeButtonText);
+    </script>
+</html>
