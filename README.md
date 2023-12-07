@@ -6,14 +6,6 @@ Code created by following Backend Development 1 course from Noroff
 
 I hope this isn't copyright infringement
 
-```html
-<p>Text paragraph</p>
-```
-
-```javascript
-console.log("Hello world");
-```
-
 ## Contributing
 
 Lars Aass Olsen
