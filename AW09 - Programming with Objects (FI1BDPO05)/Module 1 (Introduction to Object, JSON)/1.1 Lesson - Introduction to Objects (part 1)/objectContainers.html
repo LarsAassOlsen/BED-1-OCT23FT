@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            const myObject = {
+                name: "value",
+                numberName: 20,
+                smallObject: {
+                    smallName1: 30,
+                    smallName2: 30,
+                },
+                myFunc: function (status) {
+                    this.myStatus = status;
+                },
+            };
+            console.log("Object name: " + myObject.name);
+            const myObject2 = myObject;
+            myObject2.name = "New name";
+            console.log("Object name: " + myObject.name);
+        </script>
+    </body>
+</html>

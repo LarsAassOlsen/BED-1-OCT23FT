@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Programming with objects Module 1 Self Study</title></head>
+    <body>
+        <script>
+            // Task 1
+            const person ={
+                firstName: "John",
+                lastName: "Doe"
+            };
+
+            alert("Last name: " + person.lastName);
+
+            // Task 2
+            const people = {
+                firstPerson: {
+                    firstName: "John",
+                    lastName: "Doe"
+                },
+                secondPerson: {
+                    firstName: "Mark",
+                    lastName: "Smith"
+                }
+            };
+
+            // Task 3
+            const personTask3 = {
+                name: "John",
+                surname: "Doe",
+                age: 50
+            };
+
+            alert(personTask3.name + " " + personTask3.surname + " is " + personTask3.age);
+
+            // Task 4
+            class Book{
+                constructor(
+                    title,
+                    releaseYear,
+                    author
+                ){
+                    this.title = title;
+                    this.releaseYear = releaseYear;
+                    this.author = author;
+                }
+
+                cast(){
+                    return alert("Avada Kedavra");
+                }
+            }
+
+            var book = new Book("Harry Potter", 1997, "J.K. Rowling");
+            console.log("Book: " + book.title + ". Release year: " + book.releaseYear + ". Author: " + book.author);
+            book.cast();
+
+            // Task 5
+            function BookTask5(
+                title,
+                releaseYear,
+                author
+            ){
+                this.title = title;
+                this.releaseYear = releaseYear;
+                this.author = author;
+                this.cast = function(){
+                    return alert("Avada Kedavra")
+                }
+            }
+
+            var bookTask5 = new BookTask5("Harry Potter", 1997, "J.K. Rowling");
+            console.log("Book: " + bookTask5.title + ". Release year: " + bookTask5.releaseYear + ". Author: " + bookTask5.author);
+            bookTask5.cast();
+
+            // Task 6
+            // In selfStudy.json
+
+            // Task 7
+            const obj = {
+                title: "Harry Potter",
+                releaseYear: 1997,
+                author: "J.K. Rowling"
+            };
+
+            const serialized = JSON.stringify(obj, null, 5);
+            console.log(serialized);
+            const deserialized = JSON.parse(serialized);
+            console.log(deserialized);
+
+            // Task 8
+            const o1 = new Date();
+            const o2 = new String();
+            const o3 = new Number();
+            const o4 = {};
+
+            const testData = (data) => {
+                console.log("Number of properties: " + Object.keys(data).length);
+                if(Object.keys(data).length === 0 && data.constuctor === Object){
+                    console.log('Empty object');
+                    return data;
+                }
+                else {
+                    console.log('Not an empty object');
+                    console.log(data);
+                    return data;
+                }
+            }
+
+            for(data of [o1, o2, o3, o4]){
+                testData(data);
+            }
+        </script>
+    </body>
+</html>

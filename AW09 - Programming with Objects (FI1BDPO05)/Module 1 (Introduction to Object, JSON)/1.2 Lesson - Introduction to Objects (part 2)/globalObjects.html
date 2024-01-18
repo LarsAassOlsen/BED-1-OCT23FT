@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function Person (
+                    name,
+                    surname,
+                    dateOfBirth
+                ) {
+                    this.name = name;
+                    this.surname = surname;
+                    this.dateOfBirth = dateOfBirth;
+                    this.currentAge = function() {
+                        var today = new Date();
+                        var birthDate = new Date(dateOfBirth);
+                        var age = today.getFullYear() - birthDate.getFullYear();
+                        var m = today.getMonth() - birthDate.getMonth();
+                        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                            age--;
+                        }
+                        return age;
+                    }
+                }
+            var obj = new Person("Lars Aass", "Olsen", "January 16, 1990, 20:30:00 GMT+1");
+            console.log("Current age: " + obj.currentAge());
+        </script>
+    </body>
+</html>

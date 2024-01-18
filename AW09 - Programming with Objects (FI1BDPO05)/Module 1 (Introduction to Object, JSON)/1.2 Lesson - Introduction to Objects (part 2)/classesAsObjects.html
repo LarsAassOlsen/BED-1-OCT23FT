@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            const myObject = {
+                name: "value",
+                numberName: 20,
+                smallObject: {
+                    smallName1: 30,
+                    smallName2: 30,
+                },
+                myFunc: function (status) {
+                    this.myStatus = status;
+                },
+            };
+
+            class MyClass {
+                constructor(
+                    name,
+                    numberName,
+                    smallName1,
+                    smallName2,
+                    status
+                ) {
+                    this.name = name;
+                    this.numberName = numberName;
+                    this.smallObject = {
+                        smallName1: smallName1,
+                        smallName2: smallName2
+                    }
+                    this.myStatus = status;
+                }
+                myFunc(statusValue) {
+                    this.myStatus = statusValue;
+                }
+            }
+
+            class Calculator{
+                constructor(
+                    value1,
+                    value2
+                ){
+                    this.value1 = value1;
+                    this.value2 = value2;
+                }
+                sum(){
+                    console.log(this.value1 + this.value2);
+                }
+                multiplication(){
+                    console.log(this.value1 * this.value2);
+                }
+            }
+        </script>
+    </body>
+</html>

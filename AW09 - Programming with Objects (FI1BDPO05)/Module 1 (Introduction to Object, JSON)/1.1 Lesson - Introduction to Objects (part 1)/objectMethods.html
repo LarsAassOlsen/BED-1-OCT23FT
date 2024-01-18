@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <button onclick="obj.increment()">Increment</button>
+        <button onclick="obj.decrement()">Decrement</button>
+        <script>
+            const obj = {
+                value: 0,
+                increment: function(){
+                    this.value++;
+                    console.log("Object value: " + this.value);
+                },
+                decrement: function (){
+                    this.value--;
+                    console.log("Object value: " + this.value);
+                }
+            }
+        </script>
+    </body>
+</html>

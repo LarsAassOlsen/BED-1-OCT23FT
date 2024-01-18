@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <button onclick="addProperty()">Add property</button>
+        <button onclick="removeProperty()">Remove property</button>
+        <script>
+            const myObject = {}
+            function addProperty(){
+                myObject.new = 10;
+                console.log("Object: " + myObject);
+            }
+            function removeProperty(){
+                delete myObject.new;
+                console.log(myObject);
+            }
+        </script>
+    </body>
+</html>

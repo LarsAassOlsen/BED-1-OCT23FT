@@ -1,0 +1,34 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema#",
+    "$id": "http://domainWeControl.com/schemas/exercise.json",
+    "title": "Exercise",
+    "description": "Schema for the homework exercise",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "title": "Book's title",
+            "description": "Schema for the book's title"
+        },
+        "releaseYear": {
+            "type": "integer",
+            "title": "Book's release year",
+            "description": "Schema for the book's release year"
+        },
+        "author": {
+            "type": "string",
+            "title": "Book's author",
+            "description": "Schema for the book's author"
+        },
+        "spells": {
+            "type": "array",
+            "title": "The spells array",
+            "description": "Schema for spells from the book",
+            "items": {
+                "type": "string",
+                "title": "Spell element",
+                "description": "Schema for spell from the book"
+            }
+        }
+    }
+}

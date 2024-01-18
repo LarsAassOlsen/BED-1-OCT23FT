@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            function MyFunction (
+                name,
+                numberName,
+                smallName1,
+                smallName2,
+                status
+            ) {
+                this.name = name;
+                this.numberName = numberName;
+                this.smallObject = {
+                    smallName1: smallName1,
+                    smallName2: smallName2
+                }
+                this.myStatus = status;
+                this.myFunc = function(statusValue) {
+                    this.myStatus = statusValue;
+                }
+            }
+
+            function Calculator(
+                value1,
+                value2
+            ){
+                this.value1 = value1;
+                this.value2 = value2;
+                this.sum = function(){
+                    console.log(this.value1 + this.value2);
+                }
+                this.multiplication = function(){
+                    console.log(this.value1 * this.value2);
+                }
+            }
+        </script>
+    </body>
+</html>
